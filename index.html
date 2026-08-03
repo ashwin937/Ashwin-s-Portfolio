@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ashwin — AI/LLM Engineer</title>
+<meta name="description" content="Ashwin — Final-year AI & Data Science student building agentic AI systems, RAG pipelines, and founder of Capo Clicks." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="bg-grid"></div>
+
+<!-- NAV -->
+<header class="nav">
+  <a href="#home" class="logo">ash<span>win</span><span class="cursor">_</span></a>
+  <nav class="nav-links">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#certificates">Certificates</a>
+    <a href="#bot">Ask my bot</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+</header>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="hero-text">
+    <p class="eyebrow">// building agentic systems</p>
+    <h1>Hi, I'm <span class="grad">Ashwin</span></h1>
+    <p class="role">AI / LLM Engineer <span class="dot">·</span> Multi-Agent Systems <span class="dot">·</span> Founder, Capo Clicks</p>
+    <p class="lede">
+      Final-year AI &amp; Data Science student who ships multi-agent LangGraph pipelines,
+      RAG systems, and agentic business automation — then runs a photography &amp;
+      framing business (<a href="https://instagram.com/_capo_clicks" target="_blank" rel="noopener">Capo Clicks</a>) on top of it.
+    </p>
+    <div class="hero-actions">
+      <a href="assets/Ashwin_Resume.pdf" class="btn btn-primary" download>Download CV</a>
+      <a href="#projects" class="btn btn-ghost">View Projects</a>
+    </div>
+    <div class="hero-links">
+      <a href="https://github.com/ashwin937" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/ashwin-kumar-639675293/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://leetcode.com/u/Ashwinkumar03/" target="_blank" rel="noopener">LeetCode</a>
+    </div>
+  </div>
+
+  <!-- Signature element: photo over a paint-splash shape -->
+  <div class="hero-visual">
+    <img class="hero-photo" src="assets/ashwin-photo.png" alt="Ashwin Kumar B" />
+    <div class="hero-node hero-node-1">
+      <span class="hn-dot"></span> LangGraph agent online
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section about-section">
+  <p class="section-eyebrow">01 · about</p>
+  <h2 class="section-title">About me</h2>
+
+  <div class="terminal-card">
+    <div class="pipeline-header">
+      <span class="pdot red"></span><span class="pdot yellow"></span><span class="pdot green"></span>
+      <span class="pipeline-title">ashwin.dev</span>
+    </div>
+    <div class="terminal-query">
+      <span class="spark">✦</span> <span id="aboutQuery">who is ashwin?</span><span class="blink">▌</span>
+    </div>
+    <div class="terminal-response" id="aboutResponse"></div>
+  </div>
+
+  <div class="about-facts">
+    <div class="fact"><span class="fact-label">Education</span><span>B.Tech, AI &amp; Data Science — Sri Shakthi Institute of Engineering and Technology, Coimbatore (CGPA 7.19, Graduating 2027)</span></div>
+    <div class="fact"><span class="fact-label">Experience</span><span>Machine Learning Intern, Ether Infotech — Sep–Nov 2025, Coimbatore</span></div>
+    <div class="fact"><span class="fact-label">Focus</span><span>Agentic AI · RAG · LLM infra</span></div>
+    <div class="fact"><span class="fact-label">Also runs</span><span>Capo Clicks (photography &amp; framing)</span></div>
+    <div class="fact"><span class="fact-label">Based in</span><span>Coimbatore, Tamil Nadu, India</span></div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section skills-section">
+  <p class="section-eyebrow">02 · skills</p>
+  <h2 class="section-title">My skills</h2>
+  <p class="section-sub">Each node is a tool in the stack — the cards show where I'm strongest.</p>
+
+  <p class="section-hint">Tap or hover any node — every skill has its own card.</p>
+
+  <div class="skills-graph-wrap" id="skillsWrap">
+    <svg id="skillsSvg" viewBox="0 0 900 460" class="skills-svg"></svg>
+  </div>
+
+  <div class="skills-legend" id="skillsLegend"></div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <p class="section-eyebrow">03 · projects</p>
+  <h2 class="section-title">Projects</h2>
+  <p class="section-sub">Agentic systems, RAG pipelines, and real infrastructure running a real business.</p>
+
+  <div class="projects-grid">
+
+    <a class="project-card featured" href="https://github.com/ashwin937/autoresearch-ai" target="_blank" rel="noopener">
+      <div class="project-tag">final-year project</div>
+      <h3>AutoResearch AI</h3>
+      <p>Multi-agent LangGraph pipeline using Ollama (qwen3:4b) and Tavily search to autonomously research a topic end-to-end.</p>
+      <div class="chips"><span>LangGraph</span><span>Ollama</span><span>Tavily</span></div>
+      <span class="repo-link">View repo <i>↗</i></span>
+    </a>
+
+    <a class="project-card" href="https://github.com/ashwin937/Zenith-AI" target="_blank" rel="noopener">
+      <h3>Zenith AI — Local RAG Chatbot</h3>
+      <p>Fully local, privacy-preserving RAG chatbot with a multi-node LangGraph workflow (sanitize → retrieve → generate → format), offline Q&amp;A across PDF/TXT/CSV/DOCX, and full API testing across /chat, /upload, and /documents.</p>
+      <div class="chips"><span>FastAPI</span><span>LangGraph</span><span>Mistral 7B (Ollama)</span><span>ChromaDB</span></div>
+      <span class="repo-link">View repo <i>↗</i></span>
+    </a>
+
+    <a class="project-card" href="https://github.com/ashwin937/CUSTOM_AI_AGENT_BUILDER" target="_blank" rel="noopener">
+      <h3>Custom AI Agent Builder</h3>
+      <p>No-code agentic automation platform for non-technical users, powered by Qwen3:4B and a ChromaDB-backed RAG pipeline with SQLite long-term memory. Integrates Gmail/LinkedIn (OAuth 2.0), Instagram (custom MCP server), and GitHub (PAT). Built for the InFynd AIM'26 hackathon.</p>
+      <div class="chips"><span>Gradio</span><span>Ollama Qwen3:4B</span><span>LangChain</span><span>SQLite</span></div>
+      <span class="repo-link">View repo <i>↗</i></span>
+    </a>
+
+    <a class="project-card" href="https://github.com/ashwin937/CapoclicksAgent" target="_blank" rel="noopener">
+      <h3>Capo Clicks — Agentic Ops Suite</h3>
+      <p>Multi-agent LangGraph + FastAPI business automation suite orchestrating real-time order/payment workflows via Supabase webhooks, with Twilio WhatsApp + Resend alerting — deployed on Render, serving a live e-commerce business.</p>
+      <div class="chips"><span>LangGraph</span><span>FastAPI</span><span>Supabase</span><span>Twilio</span><span>Render</span></div>
+      <span class="repo-link">View repo <i>↗</i></span>
+    </a>
+
+    <a class="project-card" href="https://capoclicks.vercel.app/" target="_blank" rel="noopener">
+      <h3>Capo Clicks Website</h3>
+      <p>Next.js e-commerce site on Vercel with Supabase + Razorpay, custom SEO (JSON-LD, dynamic sitemap), and a Telegram bot for automated DB backups.</p>
+      <div class="chips"><span>Next.js</span><span>Supabase</span><span>Razorpay</span></div>
+      <span class="repo-link">Visit site <i>↗</i></span>
+    </a>
+
+    <a class="project-card" href="https://github.com/ashwin937/agent-governance" target="_blank" rel="noopener">
+      <h3>Agent Governance-as-Code</h3>
+      <p>A two-repo system that version-controls AI agent policy alongside agent code — CI/CD enforcement, drift detection against Git history, and a read-only dashboard.</p>
+      <div class="chips"><span>CI/CD</span><span>Policy-as-Code</span><span>Python</span></div>
+      <span class="repo-link">View repo <i>↗</i></span>
+    </a>
+
+    <a class="project-card" href="https://github.com/ashwin937/resume-analyzer" target="_blank" rel="noopener">
+      <h3>Resume Analyzer</h3>
+      <p>FastAPI + Ollama backend with a vanilla JS frontend for resume feedback, currently being tuned for local inference performance.</p>
+      <div class="chips"><span>FastAPI</span><span>Ollama</span></div>
+      <span class="repo-link">View repo <i>↗</i></span>
+    </a>
+
+    <a class="project-card" href="https://github.com/ashwin937/ai-news-digest" target="_blank" rel="noopener">
+      <h3>AI News Digest</h3>
+      <p>Standalone service delivering a daily AI news summary straight to WhatsApp, running on a scheduled Render cron job.</p>
+      <div class="chips"><span>Render</span><span>Cron</span><span>WhatsApp</span></div>
+      <span class="repo-link">View repo <i>↗</i></span>
+    </a>
+
+  </div>
+  <p class="repo-note">Repo links use <code>github.com/ashwin937/&lt;repo-name&gt;</code> — if a slug doesn't match an actual repo yet, edit that card's <code>href</code> in <code>index.html</code>.</p>
+</section>
+
+<!-- CERTIFICATES -->
+<section id="certificates" class="section">
+  <p class="section-eyebrow">04 · certificates</p>
+  <h2 class="section-title">Certificates</h2>
+  <p class="section-sub">Ranging from Agentic AI to SQL and problem solving.</p>
+  <div class="certs-cascade" id="certsCascade">
+    <svg class="certs-connector" id="certsConnector"></svg>
+    <a class="cert-card" href="assets/certs/oracle-agentic-ai.png" target="_blank" rel="noopener">
+      <img class="cert-thumb" src="assets/certs/oracle-agentic-ai.png" alt="Oracle Certified Foundations Associate — Agentic AI" />
+      <p>Oracle Certified Foundations Associate<br /><span class="cert-issuer">Agentic AI · Oracle University</span></p>
+    </a>
+    <a class="cert-card" href="assets/certs/lean-six-sigma.png" target="_blank" rel="noopener">
+      <img class="cert-thumb" src="assets/certs/lean-six-sigma.png" alt="Lean Six Sigma Yellow Belt" />
+      <p>Lean Six Sigma Yellow Belt<br /><span class="cert-issuer">Vision Excellence · 92%</span></p>
+    </a>
+    <a class="cert-card" href="assets/certs/hackerrank-sql.png" target="_blank" rel="noopener">
+      <img class="cert-thumb" src="assets/certs/hackerrank-sql.png" alt="HackerRank SQL Advanced Certificate" />
+      <p>SQL (Advanced)<br /><span class="cert-issuer">HackerRank</span></p>
+    </a>
+    <a class="cert-card" href="assets/certs/hackerrank-problem-solving.png" target="_blank" rel="noopener">
+      <img class="cert-thumb" src="assets/certs/hackerrank-problem-solving.png" alt="HackerRank Problem Solving Basic Certificate" />
+      <p>Problem Solving (Basic)<br /><span class="cert-issuer">HackerRank</span></p>
+    </a>
+    <a class="cert-card" href="assets/certs/simplilearn-python.png" target="_blank" rel="noopener">
+      <img class="cert-thumb" src="assets/certs/simplilearn-python.png" alt="Simplilearn Python for Beginners Certificate" />
+      <p>Python for Beginners<br /><span class="cert-issuer">Simplilearn SkillUp</span></p>
+    </a>
+    <a class="cert-card" href="assets/certs/infynd-aim26.png" target="_blank" rel="noopener">
+      <img class="cert-thumb" src="assets/certs/infynd-aim26.png" alt="InFynd AIM'26 Certificate of Participation" />
+      <p>AIM'26 Hackathon<br /><span class="cert-issuer">Certificate of Participation · InFynd</span></p>
+    </a>
+  </div>
+</section>
+
+<!-- ASK MY BOT -->
+<section id="bot" class="section">
+  <p class="section-eyebrow">05 · ask my bot</p>
+  <h2 class="section-title">Ask my bot</h2>
+  <p class="section-sub">Wired to a real LLM — ask it about my projects, skills, or how to get in touch.</p>
+
+  <div class="bot-row">
+    <div class="chat-widget">
+      <div class="chat-log" id="chatLog">
+        <div class="msg bot">Hey — I'm Ashwin's portfolio bot. Ask me about his projects, skills, or how to reach him.</div>
+      </div>
+      <div class="chat-suggestions">
+        <button class="suggestion">
+          <span class="suggestion-q">What's Ashwin's strongest skill?</span>
+          <span class="suggestion-hint">technical only</span>
+        </button>
+        <button class="suggestion">
+          <span class="suggestion-q">Tell me about the Capo Clicks Ops Suite</span>
+          <span class="suggestion-hint">project deep-dive</span>
+        </button>
+        <button class="suggestion">
+          <span class="suggestion-q">How do I contact him?</span>
+          <span class="suggestion-hint">email &amp; phone</span>
+        </button>
+      </div>
+      <form id="chatForm" class="chat-input-row">
+        <span class="input-spark">✦</span>
+        <input id="chatInput" type="text" placeholder="Ask something..." autocomplete="off" required />
+        <button type="submit" class="btn btn-primary">Send</button>
+      </form>
+    </div>
+
+    <div class="bot-mascot" aria-hidden="true">
+      <div class="mascot-bubble">Hello! 👋</div>
+      <svg viewBox="0 0 120 130" class="mascot-svg">
+        <rect x="10" y="8" width="12" height="24" rx="6" fill="var(--violet)"/>
+        <circle cx="16" cy="8" r="5" fill="var(--cyan)"/>
+        <rect x="18" y="30" width="84" height="68" rx="22" fill="url(#mgrad)"/>
+        <circle cx="42" cy="62" r="9" fill="#0a0e17"/>
+        <circle cx="78" cy="62" r="9" fill="#0a0e17"/>
+        <circle cx="42" cy="62" r="4" fill="#fff"/>
+        <circle cx="78" cy="62" r="4" fill="#fff"/>
+        <path d="M42 82 Q60 94 78 82" stroke="#0a0e17" stroke-width="4" fill="none" stroke-linecap="round"/>
+        <rect x="4" y="70" width="16" height="8" rx="4" fill="var(--violet)"/>
+        <rect x="100" y="70" width="16" height="8" rx="4" fill="var(--cyan)"/>
+        <ellipse cx="60" cy="118" rx="30" ry="7" fill="rgba(124,108,240,0.18)"/>
+        <defs>
+          <linearGradient id="mgrad" x1="18" y1="30" x2="102" y2="98" gradientUnits="userSpaceOnUse">
+            <stop stop-color="var(--violet)"/>
+            <stop offset="1" stop-color="var(--cyan)"/>
+          </linearGradient>
+        </defs>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section contact-section">
+  <p class="section-eyebrow">06 · contact</p>
+  <h2 class="section-title">Let's build something great together</h2>
+  <a href="mailto:ashwinkbd3@gmail.com" class="btn btn-primary btn-lg">Get in touch</a>
+  <p class="contact-meta">
+    ashwinkbd3@gmail.com &nbsp;·&nbsp; +91 93425 77533 &nbsp;·&nbsp; Coimbatore, Tamil Nadu, India
+  </p>
+</section>
+
+<footer class="footer">
+  <p>© <span id="year"></span> Ashwin. Built with plain HTML, CSS &amp; JS.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
