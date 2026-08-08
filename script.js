@@ -332,3 +332,32 @@ if (certsCascade) {
     img.addEventListener('load', drawCertsConnector);
   });
 }
+// Contact section interactivity
+document.querySelectorAll('.contact-purpose-pill').forEach(pill => {
+  pill.addEventListener('click', () => {
+    document.querySelectorAll('.contact-purpose-pill').forEach(p => p.classList.remove('active'));
+    pill.classList.add('active');
+  });
+});
+
+const contactCopyBtn = document.getElementById('contactCopyBtn');
+if (contactCopyBtn) {
+  contactCopyBtn.addEventListener('click', () => {
+    navigator.clipboard.writeText('ashwinkbd3@gmail.com');
+    contactCopyBtn.textContent = '✓ Copied';
+    setTimeout(() => { contactCopyBtn.textContent = '⧉ Copy Email'; }, 1500);
+  });
+}
+
+const contactSendBtn = document.getElementById('contactSendBtn');
+if (contactSendBtn) {
+  contactSendBtn.addEventListener('click', () => {
+    const name = document.getElementById('contactName').value;
+    const email = document.getElementById('contactEmail').value;
+    const msg = document.getElementById('contactMessage').value;
+    const purpose = document.querySelector('.contact-purpose-pill.active')?.textContent.trim() || 'General Inquiry';
+    const subject = encodeURIComponent(`Portfolio Contact — ${purpose} — from ${name || 'Website Visitor'}`);
+    const body = encodeURIComponent(`${msg}\n\nFrom: ${name} (${email})`);
+    window.location.href = `mailto:ashwinkbd3@gmail.com?subject=${subject}&body=${body}`;
+  });
+}
