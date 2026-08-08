@@ -208,7 +208,7 @@ if (aboutResponseEl) {
 // ---------- Ask my bot ----------
 // Point this at your deployed chat backend (see /server/server.js for a
 // ready-to-deploy Node/Express endpoint that calls the Claude API).
-const CHAT_ENDPOINT = 'http://localhost:3001/api/chat';
+const CHAT_ENDPOINT = 'https://ashwin-s-portfolio-production.up.railway.app/api/chat';
 
 const chatLog = document.getElementById('chatLog');
 const chatForm = document.getElementById('chatForm');
